@@ -9,11 +9,25 @@ Item {
     visible: !(opacity === 0)
 
     Text {
+        id: dateLabel
+        text: DU.getFirstDay(currentYear, weekNumber).toLocaleDateString(Qt.locale(), "dd.MM.yyyy")
+        anchors {
+            top: parent.top
+            topMargin: dateLabel.height * 0.3
+            horizontalCenter: parent.horizontalCenter
+        }
+        font {
+            pointSize: 12
+        }
+        color: "#e2c377"
+    }
+
+    Text {
         id: weekLabel
         text: qsTr("Week ") + weekNumber
         anchors {
-            top: parent.top
-            topMargin: weekLabel.height * 0.3
+            top: dateLabel.bottom
+            topMargin: dateLabel.height * 0.25
             horizontalCenter: parent.horizontalCenter
         }
         font {
