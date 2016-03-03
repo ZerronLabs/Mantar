@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
         <file>qml/MantarMenu.qml</file>
         <file>qml/CurrentWeekView.qml</file>
         <file>qml/DailyGoals.qml</file>
@@ -10,6 +9,7 @@
         <file>qml/AboutView.qml</file>
         <file>qml/WeeksView.qml</file>
         <file>qml/YearSelector.qml</file>
+        <file>qml/main.qml</file>
     </qresource>
     <qresource prefix="/images">
         <file>images/about.png</file>

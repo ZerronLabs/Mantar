@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     app.setApplicationName("Mantar");
 
     QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
 
     return app.exec();
 }

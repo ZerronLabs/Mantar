@@ -17,6 +17,8 @@ OTHER_FILES += qml/* \
 # Default rules for deployment.
 include(deployment.pri)
 
+win32:RC_ICONS += mantar_icon.ico
+
 DISTFILES += \
     android/AndroidManifest.xml \
     android/gradle/wrapper/gradle-wrapper.jar \
