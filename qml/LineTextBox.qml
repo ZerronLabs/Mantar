@@ -43,6 +43,19 @@ Item {
         color: orderSignColor
     }
 
+    MouseArea {
+        anchors.fill: parent
+        onClicked: textBox.forceActiveFocus(Qt.MouseFocusReason);
+        propagateComposedEvents: true
+        onPressAndHold: {
+            mainWindow.weekView.saveCurrentStatus();
+            if (textBox.text.length > 0) {
+                done = !done;
+                root.editingFinished(done);
+            }
+        }
+    }
+
     TextInput {
         id: textBox
         width: parent.width - (useNumbers ? pointLabel.width : bulletCircle.width)
@@ -67,19 +80,6 @@ Item {
         selectionColor: "#fddb99"
 
         Behavior on color { ColorAnimation { duration: 250 } }
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: textBox.forceActiveFocus(Qt.MouseFocusReason)
-            propagateComposedEvents: true
-            visible: !textBox.focus
-            onPressAndHold: {
-                if (textBox.text.length > 0) {
-                    done = !done;
-                    root.editingFinished(done);
-                }
-            }
-        }
     }
 
     Rectangle {
