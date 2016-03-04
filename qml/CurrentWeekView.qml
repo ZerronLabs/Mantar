@@ -17,7 +17,7 @@ Item {
             horizontalCenter: parent.horizontalCenter
         }
         font {
-            pointSize: 12
+            pointSize: 10
         }
         color: "#e2c377"
     }
