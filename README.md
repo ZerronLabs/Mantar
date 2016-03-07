@@ -8,7 +8,7 @@ You can add goals and outcomes and with press and hold you can toggle the item's
 # Supported Platforms
 
 - Windows
-- OS X (Coming Soon)
+- OS X
 - Anroid (Coming Soon)
 
 # Coming Soon
