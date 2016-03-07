@@ -5,6 +5,12 @@ You can add goals and outcomes and with press and hold you can toggle the item's
 
 ![mantar_ui](https://github.com/ZerronLabs/Mantar/blob/master/ui.jpg)
 
+# Supported Platform
+
+- Windows
+- OS X (Coming Soon)
+- Anroid (Coming Soon)
+
 # Coming Soon
 
 - [ ] Google Drive and Dropbox Backup
