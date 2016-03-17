@@ -9,7 +9,7 @@ You can add goals and outcomes and with press and hold you can toggle the item's
 
 - Windows
 - OS X
-- Anroid (Coming Soon)
+- [Anroid](https://play.google.com/store/apps/details?id=org.zerronlabs.mantar)
 
 # Coming Soon
 
